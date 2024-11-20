@@ -979,9 +979,11 @@ ul {
 
 @media (max-width: 500px) {
 
-    body {
+    body, section {
         width: 100%;
+        overflow-x: hidden
     }
+
     
 
     .nav-container{
