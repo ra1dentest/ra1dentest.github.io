@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
@@ -13,12 +14,15 @@ body {
     font-family: 'Josefin Sans';
     font-weight: 400;
     display: block;
+    overflow-x: hidden;
+
 }
 
 nav {
     display: flex;
     width: 100%;
     justify-content: center;
+
 }
 
 a {
@@ -49,12 +53,14 @@ ul {
     margin-bottom: 98px;
     position: absolute;
     margin-top: 25px;
+    
 }
 
 .nav-links {
     width: 80%;
     display: flex;
     justify-content: space-between;
+
 }
 
 
@@ -150,6 +156,7 @@ ul {
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
+    
 }
 
 .flex-container {
@@ -159,6 +166,7 @@ ul {
     justify-content: space-evenly;
     padding-bottom: 100px;
     padding-top: 200px;
+    
 }
 
 .hero-card {
@@ -214,6 +222,7 @@ ul {
     position: relative;
     width: 650px;
     left: 155px;
+    overflow-x: hidden;
 }
 
 .google-play {
@@ -483,6 +492,7 @@ ul {
 .checkout-interface {
     margin: 0 auto;
     padding: 0 20px;
+    overflow-x: hidden;
 }
 
 .checkout-flex {
@@ -608,6 +618,7 @@ ul {
 .reative-team {
     padding-top: 120px;
     width: 100%;
+    
 }
 
 .reative-team-container {
@@ -981,7 +992,7 @@ ul {
 
     body, section {
         width: 100%;
-        overflow-x: hidden
+        margin: 0;
     }
 
     
@@ -1024,6 +1035,7 @@ ul {
         width: 70px;
         height: 35px;
         font-size: 10px;
+        border-radius: 3px;
     }
 
     .rectangle {
@@ -1050,7 +1062,7 @@ ul {
         font-size: 16px;
     }
 
-    .hero-p-mobile {
+    .hero-p-mobile, .white-button, .purple-button {
         display: none;
     }
 
@@ -1061,21 +1073,118 @@ ul {
         
     }
 
-    .header-black {
+    .header-black, .header-white, .team-box-header-black {
         font-size: 25px;
+        font-weight: 600;
+        text-align: center;
     }
 
     .about-img {
         max-width: 240px;
     }
 
-    .description-about {
+    .description-about, .features-p-center-align {
         font-size: 16px;
+        font-weight: 400;
+        max-width: 300px;
     }
 
     .box1 {
         max-width: 350px;
     }
+
+    .app-features-wrap {
+        margin-top: 0px;
+    }
+
+    .features-left, .features-right {
+        height: 80%;
+        margin: 0;
+    }
+
+    .features-apps-l, .features-apps-r {
+        align-items: center;
+
+    }
+
+    .img-features-center {
+        width: 80%;
+    }
+
+    .features-p, .features-p-right-align {
+        text-align: center;
+    }
+
+    .about-p, .how-to-use-p, .reative-team-p {
+        max-width: 300px;
+        width: 90%;
+    }
+
+    .reative-team-p{
+        margin: 0;
+    }
+
+    .download-p {
+        max-width: 330px;
+    }
+
+    .div-2 .header-black {
+        max-width: 250px;
+        text-align: left;
+    }
+
+    .hero-card-img {
+        max-width: 325px;
+    }
+
+    .ul {
+        gap: 10px;
+        padding-top: 30px;
+        margin-left: 0;
+    }
+
+    .list2 img {
+        width: 110px;
+        height: 110px;      
+    }
+
+    .download-img {
+        padding: 0;
+        max-width: 330px;
+    }
+
+    #video1 {
+        width: 90vw;
+        height: 25vh;
+        z-index: 1;
+    }
+
+    .reative-team {
+        padding-top: 0;
+    }
+
+    .head {
+        padding-top: 30px;
+    }
+
+    .reative-team-flex {
+        padding-top: 0;
+    }
+
+    .team-box {
+        margin-left: 16px;
+        max-width: 90%;
+    }
+
+    .profile-img {
+        margin-bottom: 30px;
+    }
+
+    .team-box-p {
+        margin-left: 35px;
+        margin-bottom: 30px;
+    }
+
 }
 
 
