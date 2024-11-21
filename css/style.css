@@ -1131,6 +1131,11 @@ ul {
     .div-2 .header-black {
         max-width: 250px;
         text-align: left;
+        padding-left: 20px;
+    }
+
+    .div-2 .download-p {
+        padding-left: 20px;
     }
 
     .hero-card-img {
