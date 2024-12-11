@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
 
+
 }
 
 body {
@@ -14,7 +15,6 @@ body {
     font-family: 'Josefin Sans';
     font-weight: 400;
     display: block;
-    overflow-x: hidden;
 
 }
 
@@ -107,6 +107,15 @@ ul {
     
 }
 
+.nav-container a {
+    transition: color 0.3s linear;
+}
+
+.nav-container li a:hover{
+    border-bottom: 2px solid #5956E9;
+    transition: all 200ms ease;
+}
+
 .nav-container li {
     display: inline;
     font-size: 20px;
@@ -147,7 +156,12 @@ ul {
     
 }
 
+.download:hover {
+    color: black;
+    background-color: white;
+    transition: 1s;
 
+}
 
 .start {
     display: flex;
@@ -856,17 +870,15 @@ ul {
     position: relative;
     box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.10);
     text-align: center;
+    justify-content: space-around;
 }
 
 .mail-phone {
     text-decoration: none;
-    width: 100%;
     display: flex;
     justify-content: space-evenly;
     gap: 18px;
     align-items: center;
-    margin-right: 150px;
-    margin-left: 70px;
 }
 
 .mail-phone-p {
@@ -992,11 +1004,15 @@ ul {
     justify-content: center;
 }
 
+.menu, .hamburger {
+    display: none;
+}
+
 @media (max-width: 500px) {
 
     body, section {
         width: 100%;
-
+        overflow-x: hidden;
         margin: 0;
     }
 
@@ -1023,7 +1039,6 @@ ul {
     .menu-burger {
         display: block;
         margin-left: 10px;
-        margin-top: 10px;
     }
 
     .nav-container li {
@@ -1216,13 +1231,13 @@ ul {
        height: 360px;
        display: flex;
        flex-direction: column;
+       margin-left: 30px;
        
     }
 
     .mail-phone {
         display: flex;
         flex-direction: column;
-        padding-left: 90px;
         text-transform: uppercase;
 
     }
@@ -1258,6 +1273,50 @@ ul {
         margin-top: 20px;
         margin-left: 0;
     }
+
+    .hamburger {
+        position: fixed;
+        z-index: 100;
+        top: 4rem;
+        left: 1rem;
+        padding: 1px;
+        border-radius: 5px;
+        border: 0px;
+        background: rgba(255, 255, 255, 0.479);
+        cursor: pointer;
+        display: block;
+    }
+
+    .menu {
+        overflow: hidden;
+        position: fixed;
+        transform: translateY(-100%);
+        transition: transform 0.2s;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        background: white;
+        color: black;
+        list-style: none;
+        padding-top: 4rem;
+        padding-left: 6rem;
+        display: block;
+        font-size: 20px;
+        font-weight: 600px;
+        text-transform: uppercase;
+    }
+
+    .showMenu {
+        transform: translateY(0);
+    }
+
+    .menu li {
+        padding-bottom: 30px;
+    }
+
+    
 }
 
 
